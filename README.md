@@ -1,2 +1,0 @@
-# TestNGPractice
-TestNG Practice Repository

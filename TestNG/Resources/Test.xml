@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Create worklog for Tickets" verbose="1"  >
+
+  	<parameter name="type" value="rest"/>
+	<test verbose="2" name="Add worklog of service Request with Analyst user." annotations="JDK" enabled="true" preserve-order="false">
+		<groups>
+			<run><include name="1" /></run>
+		</groups>
+		<classes><class name="firstTestNGPackage.Annotations1" /></classes>
+	</test>
+	
+	<parameter name="type" value="rest"/>
+	<test verbose="2" name="Second Test Case." annotations="JDK" enabled="true" preserve-order="false">
+		<groups>
+			<run><include name="2" /></run>
+		</groups>
+		<classes><class name="firstTestNGPackage.Annotations1" /></classes>
+	</test>
+	
+</suite>

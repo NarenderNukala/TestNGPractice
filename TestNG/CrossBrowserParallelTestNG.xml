@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Mercury Application Automation" thread-count="5" parallel="tests" >
+
+	<test name="Merucry Login Verification.">
+		<classes>
+			<class name="firstTestNGPackage.MercuryLoginPage" />
+		</classes>
+	</test>
+	
+	<test name="Merucury Login Page Chrome.">
+		<classes>
+			<class name="firstTestNGPackage.MercuryLoginPageChrome" />
+		</classes>
+	</test>
+	
+<!-- 	<test name="Merucury Login Page Title IE.">
+		<classes>
+			<class name="firstTestNGPackage.MercuryLoginPageIE" />
+		</classes>
+	</test> -->
+	
+</suite>

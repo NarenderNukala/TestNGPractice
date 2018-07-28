@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" parallel="false">
+  
+  <parameter name="userName" value="naren" />
+  <parameter name="password" value="suiteParamPasswd" />
+  
+  <test name="Test">
+  	<parameter name="userName" value="narender" />
+  	<parameter name="password1" value="narender" />
+    <classes>
+      <class name="firstTestNGPackage.ParameterEx"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
