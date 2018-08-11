@@ -1,0 +1,63 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+      <class name="firstTestNGPackage.NewTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <!--  http://testng.org/doc/documentation-main.html#test-groups -->
+  
+  <test name="Regression1">
+    <classes>
+      <class name="test.sample.ParameterSample"></class>
+      <class name="test.sample.ParameterTest"/>
+    </classes>
+  </test>
+  
+    <test name="Regression1"   >
+	    <packages>
+	      <package name="firstTestNGPackage" />
+	      <package name="LoginPackage" />
+	   </packages>
+	 </test>
+	  
+  
+  <!--  You can also exclude or include individual methods: -->
+  <test name="Test1">
+	  <classes>
+	    <class name="example1.Test1">
+	      <methods>
+	        <include name=".*enabledTestMethod.*"/>
+	        <exclude name=".*brokenTestMethod.*"/>
+	      </methods>
+	     </class>
+	  </classes>
+	</test>
+  
+  <!--  You can also exclude or include groups  -->
+  <test name="Simple example">
+	  <groups>
+	    <run>
+	      <include name="checkintest"/>
+	      <exclude name="broken"/>
+	    </run>
+	  </groups>
+	  
+	  <classes>
+	    <class name="example1.Test1"/>
+	  </classes>
+	</test>
+  
+  
+</suite> <!-- Suite -->
+
+<!-- 
+Assuming that you have TestNG in your class path, the simplest way to invoke TestNG is as follows:
+
+java org.testng.TestNG testng1.xml [testng2.xml testng3.xml ...]
+
+
+-->
+
