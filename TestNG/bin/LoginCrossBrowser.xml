@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  
+  <parameter name="Browser" value="chrome" />
+    
+  <test name="Test">
+  	<parameter name="userName" value="narender" />
+  	<parameter name="password" value="narender" />
+    <classes>
+      <class name="firstTestNGPackage.MercuryLoginPageCrossBrowser"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

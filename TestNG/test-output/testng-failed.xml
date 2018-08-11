@@ -1,47 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test thread-count="5" name="Title Verification.(failed)">
-    <groups>
-      <run>
-        <include name="Sanity"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Test(failed)" parallel="tests">
     <classes>
-      <class name="firstTestNGPackage.MercuryLoginPageGrpIds">
+      <class name="Grid.GridExample2">
         <methods>
-          <include name="verifyLoginPage"/>
+          <include name="loginPageVerification"/>
+          <include name="windowsTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="titleVerifcation"/>
         </methods>
-      </class> <!-- firstTestNGPackage.MercuryLoginPageGrpIds -->
+      </class> <!-- Grid.GridExample2 -->
     </classes>
-  </test> <!-- Title Verification.(failed) -->
-  <test thread-count="5" name="Login Page Verification.(failed)">
-    <groups>
-      <run>
-        <include name="2"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="firstTestNGPackage.MercuryLoginPageGrpIds">
-        <methods>
-          <include name="verifyLogin"/>
-        </methods>
-      </class> <!-- firstTestNGPackage.MercuryLoginPageGrpIds -->
-    </classes>
-  </test> <!-- Login Page Verification.(failed) -->
-  <test thread-count="5" name="Login Functionality Verification.(failed)">
-    <groups>
-      <run>
-        <include name="2"/>
-        <include name="3"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="firstTestNGPackage.MercuryLoginPageGrpIds">
-        <methods>
-          <include name="verifyLogin"/>
-        </methods>
-      </class> <!-- firstTestNGPackage.MercuryLoginPageGrpIds -->
-    </classes>
-  </test> <!-- Login Functionality Verification.(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

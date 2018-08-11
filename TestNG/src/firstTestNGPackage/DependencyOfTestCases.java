@@ -10,7 +10,8 @@ public class DependencyOfTestCases {
   @Test
   public void Registration() {
 	  System.out.println("First Registration has to be completed.");
-	  //Assert.assertTrue(false); 
+	  Assert.assertTrue(false); 
+	 
   }
   
   @Test(dependsOnMethods={"Registration"})

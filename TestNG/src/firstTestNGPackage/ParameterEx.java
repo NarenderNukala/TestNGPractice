@@ -38,7 +38,7 @@ public class ParameterEx {
 	  @AfterMethod()
 	  public void closeDriver()
 	  {
-		  driver.quit();
+		 // driver.quit();
 	  }
 	  
 	@Test
@@ -47,7 +47,8 @@ public class ParameterEx {
 		// verifying login.
 		driver.findElement(By.name("userName")).sendKeys(uName);
 		driver.findElement(By.name("password")).sendKeys(passWd);
-		driver.findElement(By.name("login")).click();
+		System.out.println(passWd);
+		/*driver.findElement(By.name("login")).click();
 
 		if (driver.getTitle().equals("Find a Flight: Mercury Tours:")) {
 			System.out.println("Flight selection page displayed successfully");
@@ -62,7 +63,7 @@ public class ParameterEx {
 			File DestFile = new File("F:\\Selenium\\Programs\\LoginUnSuccess.jpg");
 			screenshotFile.renameTo(DestFile);
 			Assert.assertTrue(false);
-		}
+		}*/
 	}
 	 
 /*	 @Test  //optional parameter

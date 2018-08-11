@@ -11,14 +11,15 @@
   
   <test name="Regression1">
     <classes>
-      <class name="test.sample.ParameterSample"/>
+      <class name="test.sample.ParameterSample"></class>
       <class name="test.sample.ParameterTest"/>
     </classes>
   </test>
   
     <test name="Regression1"   >
 	    <packages>
-	      <package name="test.sample" />
+	      <package name="firstTestNGPackage" />
+	      <package name="LoginPackage" />
 	   </packages>
 	 </test>
 	  

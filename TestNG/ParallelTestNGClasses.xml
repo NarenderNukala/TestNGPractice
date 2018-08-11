@@ -9,10 +9,10 @@
 		</classes>
 	</test>
 	
-	<!-- <test name="Merucry Login Page Title.">
+	<test name="Merucry Login Page Title.">
 		<classes>
-			<class name="firstTestNGPackage.FirstTestNGFile" />
+			<class name="firstTestNGPackage.Annotations" />
 		</classes>
-	</test> -->
+	</test>
 	
 </suite>

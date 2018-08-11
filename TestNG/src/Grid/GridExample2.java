@@ -37,9 +37,9 @@ public class GridExample2 {
    @Test
    public void windowsTest() {
       driver.get(baseUrl);
-      driver.findElement(By.id("gbqfq")).clear();
-      driver.findElement(By.id("gbqfq")).sendKeys("Narender");
-      driver.findElement(By.id("gbqfb")).click();
+      driver.findElement(By.name("q")).clear();
+      driver.findElement(By.name("q")).sendKeys("Narender");
+      driver.findElement(By.name("q")).click();
    }
    
    @Test

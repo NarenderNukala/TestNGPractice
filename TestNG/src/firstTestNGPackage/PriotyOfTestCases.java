@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class PriotyOfTestCases {
 //working
-  @Test
+/*  @Test
   public void Registration() {
 	  System.out.println("First Registration has to be completed.");
   }
@@ -17,10 +17,10 @@ public class PriotyOfTestCases {
   @Test
   public void ChangePassword() {
 	  System.out.println("Change Password after login into application.");
-  }
+  }*/
   
   
-  /*@Test(priority=1)
+  @Test(priority=1)
   public void Registration() {
 	  System.out.println("First Registration has to be completed.");
   }
@@ -33,7 +33,7 @@ public class PriotyOfTestCases {
   @Test(priority=3)
   public void ChangePassword() {
 	  System.out.println("Change Password after login into application.");
-  }*/
+  }
   
   
 }
