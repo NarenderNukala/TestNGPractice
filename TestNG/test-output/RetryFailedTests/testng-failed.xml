@@ -9,6 +9,7 @@
       <class name="reTryMechanism.LoginPage">
         <methods>
           <include name="setUP"/>
+          <include name="verifyLoginPage"/>
           <include name="extentFail"/>
           <include name="navigateApp"/>
           <include name="closeDriver"/>
