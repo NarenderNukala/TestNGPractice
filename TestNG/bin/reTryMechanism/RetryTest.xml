@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="RetryFailedTests" verbose="1" >
+ <listeners>
+        <listener class-name="reTryMechanism.AnnotationTransformer"/>
+  </listeners>
+  <test name="RetryMulitple">
+    <classes>
+      <class name="reTryMechanism.LoginPage"/>
+    </classes>
+  </test>
+</suite>
